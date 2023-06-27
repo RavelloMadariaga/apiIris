@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request
 import joblib
-import sklearn
 
 #curl -d "{\"Medidas\":[[1,2,3,4]]}" -H "Content-Type: applicacion/json" -X POST http://127.0.0.1:5000/predecir
 
