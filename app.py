@@ -15,7 +15,7 @@ def predecir():
     Medidas= json['Medidas']
     clf= joblib.load('modelo_entrenado.pkl')
     prediction=clf.predict(Medidas)
-    return "Tiene probabilidades de ganar de un {0}: ".format(prediction)
+    return "pertenece a la categoria {0}: ".format(prediction)
 
 if __name__ == '__main__':
     app.run()
